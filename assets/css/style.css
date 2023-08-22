@@ -268,17 +268,18 @@
     left: -100% !important;
     flex-direction: column;
     position: fixed;
-    top: 0;
+    top: 0 !important;
     align-items: center;
     text-align: center;
     justify-content: center !important;
     background-color: blue !important;
     width: 100% !important;
     height: 100% !important;
-    /* z-index: 100 !important; */
+    z-index: 100 !important;
     transition: 800ms;
     min-height: 100vh;
     gap: 50px !important;
+
   }
 
   label[for="checkbox"] {
@@ -313,7 +314,7 @@
   }
 
   .zz {
-    z-index: 500;
+    z-index: 5;
   }
 }
 @media (min-width:992px) {

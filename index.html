@@ -13,6 +13,9 @@
 
     <link rel="shortcut icon" href="./assests/image/sliderimg2.png" type="image/x-icon">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -110,7 +113,7 @@
         </div>
     </section>
 
-    <section class="bg_black mrtop-40 position-relative">
+    <section class="bg_black mrtop-40 position-relative" >
         <div class="ellips"></div>
         <div class="ellips1"></div>
         <div class="container d-block d-lg-none">
@@ -131,8 +134,8 @@
     </section>
 
     <!-- section-second -->
-    <section class="bg_black py-5" id="#">
-        <div class="container">
+    <section class="bg_black py-5" id="#" >
+        <div class="container" data-aos="flip-left">
             <div class="row align-items-center">
                 <div class="col-12 col-xl-7 d-flex align-content-start">
                     <img src="./assets/image/Aiimg.png" alt="aiimg" class="w-100">
@@ -741,6 +744,9 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -751,52 +757,56 @@
 
 </body>
 
+<script>
+  AOS.init();
+</script>
+
 </html>
 
 <!-- sliderss -->
 <script>
-        $('.sliderss').slick({
+    $('.sliderss').slick({
 
-            dots: false,
-            infinite: true,
-            speed: 3000,
-            slidesToShow: 2.8,
-            slidesToScroll: 1,
-            autoplaySpeed: 0,
-            autoplay: true,
-            pauseOnHover: true,
-            pauseOnFocus: false,
-            cssEase: 'linear',
+        dots: false,
+        infinite: true,
+        speed: 3000,
+        slidesToShow: 2.8,
+        slidesToScroll: 1,
+        autoplaySpeed: 0,
+        autoplay: true,
+        pauseOnHover: true,
+        pauseOnFocus: false,
+        cssEase: 'linear',
 
-            sliderss: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true,
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
+        sliderss: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-        });
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
 </script>
 
 <!-- slidersss -->
