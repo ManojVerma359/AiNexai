@@ -55,7 +55,7 @@
                                 Up</a></li>
 
                     </ul>
-                    <button class="ff_primary fs_sm fw_bold secondary_color btns d-none d-lg-block ff_Recharge">Sign
+                    <button class=" fs_sm fw_bold secondary_color btns d-none d-lg-block ff_Recharge">Sign
                         Up</button>
 
                     <label for="checkbox" id="menu" onclick="opennav(rotates1)" class="d-lg-none">
@@ -715,6 +715,15 @@
         crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        function opennav(){
+            document.getElementByI("navbar").clasList.toggl("start-0")
+document.body.classList.toggle("overflow-hidden")
+document.getElementById("line").classList.toggle("rotates1")
+document.getElementById("line-1").classList.toggle("rotates2")
+document.getElementById("line-2").classList.toggle("rotates3")
+        }
+    </script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"

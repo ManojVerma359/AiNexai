@@ -85,7 +85,7 @@
 .boxs1 {
   border-radius: 16px;
   border: 1px solid rgba(252, 252, 252, 0.4);
-  background-color:#fff; 
+  background-color: #fff;
   box-shadow: 1px 1px 24px 1px rgba(0, 0, 0, 0.1);
   width: 364px;
   padding: 24px;
@@ -156,7 +156,7 @@
 .imggrupf {
   border-radius: 100%;
 }
-.mt-40{
+.mt-40 {
   margin-top: 40px;
 }
 
@@ -241,7 +241,7 @@
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color:#fff ;
+  background-color: #fff;
   position: relative;
   border-radius: 6px;
 }
@@ -274,12 +274,10 @@
     justify-content: center !important;
     background-color: blue !important;
     width: 100% !important;
-    height: 100% !important;
     z-index: 100 !important;
     transition: 800ms;
     min-height: 100vh;
     gap: 50px !important;
-
   }
 
   label[for="checkbox"] {
@@ -291,7 +289,7 @@
     z-index: 2;
   }
 
-  label[for="checkbox"]>span {
+  label[for="checkbox"] > span {
     height: 6px;
     width: 38px;
     border-radius: 40px;
@@ -312,17 +310,20 @@
     transform: rotate(145deg);
     margin-bottom: 12px;
   }
+  .start-0 {
+    left: 0;
+  }
 
   .zz {
     z-index: 5;
   }
 }
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .pt-150 {
     padding-top: 150px;
   }
 }
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .pb_150 {
     padding-bottom: 150px;
     padding-top: 90px;
